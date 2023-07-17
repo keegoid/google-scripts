@@ -6,6 +6,9 @@ function onOpen() {
 
 // record history from a cell and append to next available row
 function recordValues() {
+  // force the spreadsheet to update
+  SpreadsheetApp.flush()
+
   // get sheets and record date
   var summary = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Summary")
   var dailyA = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Daily BTC Assets")

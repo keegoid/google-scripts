@@ -45,7 +45,7 @@ function recordValues() {
       assetRow.push(assets[i][j])
     }
   }
-  assetRow.push((Number(sumA).toFixed(2) + ' BTC'))
+  assetRow.push((Number(sumA).toFixed(2)))
   dailyA.appendRow(assetRow)
 
   // record debt values
@@ -55,7 +55,7 @@ function recordValues() {
       debtRow.push(debts[i][j])
     }
   }
-  debtRow.push((Number(sumD).toFixed(2) + ' BTC'))
-  debtRow.push((Number(net).toFixed(2) + ' BTC'))
+  debtRow.push((Number(sumD).toFixed(2)))
+  debtRow.push((Number(net).toFixed(2)))
   dailyD.appendRow(debtRow)
 }
